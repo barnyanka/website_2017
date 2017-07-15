@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- jquery: -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- include any global css files here -->
+  </head>
+  <body>
+    <!-- menu's css files -->
+    <link rel="stylesheet" href="../public/css/menu.css">
+    <link rel="stylesheet" href="../public/css/work.css">
+    <link rel="stylesheet" href="../public/css/body.css">
+    <link rel="stylesheet" href="../public/css/about.css">
+
+    <!-- image link syntax if u need it later
+    <img src="/public/images/_DSC0091.jpg"> -->
+
+    <ul class="menuBar">
+        <li><a href="index.html">EMMA BARNES</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="row">
+        <div class="col-3">
+            <ul class="work">
+                <li><a href="photog-link">Photography</a></li>
+                <li><a href="mapping-link">Mapping</a><li>
+                <li><a href="writing-link">Writing</a></li>
+            </ul>
+        </div>
+
+        <div class="col-9">
+            <div id="workContainer">
+                <p>This is where work goes or serves as a click-able link to new page</p>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+    <!-- load JS files last when possible -->
+    <script src="../public/javascripts/menus/menu.js"></script>
+    <script src="../public/javascripts/menus/menuListener.js"></script>
+    <script src="../public/javascripts/menus/menuStyler.js"></script>
+    <!-- important that the file below goes last -->
+    <script src="../public/javascripts/menus/runner.js"></script>
+
+    <!-- include an global javscript files here -->
+  <body>
+</html>
