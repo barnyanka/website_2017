@@ -1,0 +1,15 @@
+ul.work {
+	list-style-type:		none;
+}
+
+a:link {
+	text-decoration:  		none;
+	color:					Black;
+
+}
+
+a:hover {
+	color:            		#595959;
+}
+
+

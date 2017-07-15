@@ -1,0 +1,57 @@
+/*
+Remove margins and padding from the list, and add a black background color */
+
+/* Float the list items side by side */
+
+ul.menuBar {
+  position:           fixed;
+  list-style-type:    none; /* removes bullets from an unordered list */
+  margin:             0;
+  padding:            0;
+  overflow:           hidden;
+  background-color:   #333;
+}
+
+/* Style the links inside the list items */
+ul.menuBar li {float: left;}
+
+ul.menuBar li a {
+  font-family:        Arial, sans-serif;
+  font:               .6875em/34px;
+  letter-spacing:     1px;
+  color:              white;
+  text-transform:     uppercase;
+  background-color:   black
+  verticle align:     middle;
+  display:            inline-block;
+  color:              f2f2f2;
+  text-align:         center;
+  padding:            20px 16px;
+  text-decoration:    none;
+  transition:         0.3s;
+  font-size:          13.5px;
+}
+
+/* change background color of links on hover */
+ul.menuBar li a:hover {
+  background-color:   #404040;
+  color:              white;
+}
+
+/* Hide the list item that contains the link that should open and close the
+menuBar on small screens */
+ul.menuBar li.icon {display: none;}
+
+/*
+  Reminders
+
+  .class
+  #id
+
+  An element can have multiple id's and classes
+    This is particularily useful if you ever use something like bootstrap, which uses
+    class names to manipulate elements. For example:
+      <div class="menuTabs row col-sm-2"></div>
+    Would have three classes: 'menuTabs', 'row', and 'col-sm-2.' The last two actually
+    do stuff in bootstrap.
+*/

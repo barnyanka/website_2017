@@ -1,0 +1,45 @@
+body {
+  margin:           0;
+  min-height:			  100%;
+  font-family: 			Arial, sans-serif;
+  /*
+  background-image:		url(../images/_DSC0091.jpg);
+  background-repeat: 	no-repeat;
+  background-size: 		100%;
+  background-position:	center;
+  */
+
+  box-sizing:			  border-box;
+  }
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* float columns to the left and give a padding of 15px */
+[class*="col-"] {
+    float: left;
+    padding: 80px;
+    /*border: 1px solid red;
+    */
+}
+
+/* to prevent columns that are inside a row from being taken off the page (since
+they're floating to the left and other elements will be placed as if the 
+columns don't exist) u add this style that clears this flow :  */  
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
